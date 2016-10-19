@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<nav id="top-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand " href="#"><img src="icon/logo.png"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav ">
+                <li class="nav-active"><a href="xiaoyang.html" >晓阳工程</a></li>
+                <li><a href="zhanshi.html">项目展示</a></li>
+                <li><a href="guanyuwomen.html">关于我们</a></li>
+                <li><a href="lianxiwomen.html">联系我们</a></li>
+                <li><a href="wodepinggu.html">我的评估</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li><a class="nav-pinggu " href="xiangmupinggu.html">项目评估</a></li>
+                <li><a class="#" data-toggle="modal" href="#motal-login-phone"> 登录</a></li>
+            </ul>
+            <!--   <li><a href="#login" data-toggle="modal" data-backdrop="false"><i class="icon-user "></i>登录</a></li>   -->
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--手机登录-->
+<div id="motal-login-phone" class="modal fade .modal-dialog motal-login">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel"><img src="icon/logo.png"></h4>
+            </div>
+            <div class="modal-body" method="post" action="#" > <!--表单提交-->
+                <div class="form-group  has-feedback">
+                    <label class="control-label" for="phone-num">手机号</label>
+                    <input type="text" class="form-control input-lg" id="phone-num" placeholder="请输入手机号">
+                    <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+                </div>
+                <div class="form-group  has-feedback">
+                    <label class="control-label" for="id-code">验证码</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control input-lg" id="id-code" placeholder="请输入验证码">
+                        <span class="input-group-btn"> <button id="codi-btn" class="btn btn-lg">获取验证码</button></span>
+                    </div>
+                </div>
+                <p><a  class="text-left" href="#motal-login-password" data-toggle="modal" data-dismiss="modal" href="#motal-regisert">使用账号登录</a><a href="#" class="pull-right">找回密码</a></p>
+                <h4 class="text-center">还没有账号？<a href="#motal-register" calss="register" data-toggle="modal" data-dismiss="modal" href="#motal-regisert" >立即注册</a></h4>
+                <p class="text-center">注册账号并与晓阳工程达成合作后，您可以实时监控您的项目质量和进度</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary pull-left">登录</button>
+            </div>
+        </div>
+    </div>
+</div><!--手机登录底部-->
+<!--密码登录-->
+<div id="motal-login-password" class="modal fade .modal-dialog motal-login">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel"><img src="icon/logo.png"></h4>
+            </div>
+            <div class="modal-body" method="post" action="" > <!--表单提交-->
+                <div class="form-group  has-feedback">
+                    <label class="control-label" for="phone-num">账号</label>
+                    <input type="text" class="form-control input-lg" id="phone-num" placeholder="请输入账号">
+                    <span class="glyphicon glyphicon-book form-control-feedback"></span>
+                </div>
+                <div class="form-group  has-feedback">
+                    <label class="control-label" for="password">密码</label>
+                    <input type="text" class="form-control input-lg" id="password" placeholder="请输入密码">
+                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                </div>
+                <p><a  class="text-left" href="#motal-login-phone" data-toggle="modal" data-dismiss="modal" href="#motal-regisert">使用手机登录</a><a href="#" class="pull-right">找回密码</a></p>
+                <h4 class="text-center">还没有账号？<a href="#motal-register" calss="register" data-toggle="modal" data-dismiss="modal" href="#motal-regisert" >立即注册</a></h4>
+                <p class="text-center">注册账号并与晓阳工程达成合作后，您可以实时监控您的项目质量和进度</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary pull-left">登录</button>
+            </div>
+        </div>
+    </div>
+</div><!-- 密码登录底部-->
+
+<!--注册-->
+<div id="motal-register" class="modal fade  motal-login ">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel"><img src="icon/logo.png"></h4>
+            </div>
+            <div class="modal-body" method="post" action="" > <!--表单提交-->
+                <div class="form-group  has-feedback">
+                    <label class="control-label" for="phone-num">手机号</label>
+                    <input type="text" class="form-control input-lg" id="phone-num" placeholder="请输入手机号">
+                    <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+                </div>
+                <div class="form-group  has-feedback">
+                    <label class="control-label" for="password">密码</label>
+                    <input type="text" class="form-control input-lg" id="password" placeholder="请设置您的密码">
+                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                </div>
+                <div class="form-group  has-feedback">
+                    <label class="control-label" >重新输入密码</label>
+                    <input type="text" class="form-control input-lg" id="repassword" placeholder="请重新输入密码">
+                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                </div>
+                <div class="form-group  has-feedback">
+                    <label class="control-label" for="id-code">验证码</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control input-lg" id="id-code" placeholder="请输入验证码">
+                        <span class="input-group-btn"> <button id="id-code-btn" class="btn btn-lg">获取验证码</button></span>
+                    </div>
+                </div>
+                <p><a href="#" class="pull-right">找回密码</a></p>
+                <h4 class="text-center">已经有账号？<a href="#motal-login-phone" data-toggle="modal" data-dismiss="modal" href="#motal-regisert">立即登录</a></h4>
+                <p class="text-center">注册账号并与晓阳工程达成合作后，您可以实时监控您的项目质量和进度</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary pull-left">注册</button>
+            </div>
+        </div>
+    </div>
+</div><!-- 注册底部-->
+<div id="pinggu" class="container">
+    <br><br><br><br>
+    <h4>我的评估</h4>
+    <div id="assess">
+        <p>某某某评估<br>2016.09.20<botton class="btn btn-large btn-info pull-right">点击查看</botton></p>
+        <p>某某某评估<br>2016.09.20<botton class="btn btn-large btn-info pull-right">点击查看</botton></p>
+        <p>某某某评估<br>2016.09.20<botton class="btn btn-large btn-info pull-right">点击查看</botton></p>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/self.js"></script>
+</body>
+</html>

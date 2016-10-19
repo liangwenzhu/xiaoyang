@@ -1,0 +1,78 @@
+html, body {
+	position: relative;
+	height: 100%;
+}
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color:#000;
+	margin: 0;
+	padding: 0;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+#swiper-slide1{
+	background-image: url("../imgs/1-page.png") ;
+	-webkit-background-size: 100%;
+	position: relative;
+}
+#swiper-slide1 article{
+	color:white;
+	background-color: lightgrey;
+}
+#article1{
+	position: absolute;
+	left:120px;
+	top:60px;
+ }
+#article2{
+	position: absolute;
+	left:320px;
+	top:80px;
+}
+#article3{
+	position: absolute;
+	left:280px;
+	top:160px;
+}
+
+#swiper-slide2{
+	background-image: url("../imgs/2-page.png") ;
+	-webkit-background-size: 100%;
+}
+#swiper-slide3{
+	background-image: url("../imgs/3-page.png") ;
+	-webkit-background-size: 100%;
+}
+#swiper-slide4{
+	background-image: url("../imgs/4-page.png") ;
+	-webkit-background-size: 100%;
+}
+#swiper-slide5{
+	background-image: url("../imgs/1-page.png") ;
+	-webkit-background-size: 100%;
+}
+#top-nav{
+	text-align:center;
+}
