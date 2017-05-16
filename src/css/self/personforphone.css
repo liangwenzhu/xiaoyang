@@ -1,0 +1,313 @@
+.background-size-cover {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+.cursor-default {
+  cursor: default;
+}
+@keyframes sun {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(777777deg);
+  }
+}
+@-webkit-keyframes sun {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(777777deg);
+  }
+}
+@-moz-keyframes sun {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(777777deg);
+  }
+}
+@keyframes cloud1 {
+  0% {
+    left: 40%;
+  }
+  50% {
+    left: 60%;
+  }
+  100% {
+    left: 40%;
+  }
+}
+@-webkit-keyframes cloud1 {
+  0% {
+    left: 40%;
+  }
+  50% {
+    left: 60%;
+  }
+  100% {
+    left: 40%;
+  }
+}
+@-moz-keyframes cloud1 {
+  0% {
+    left: 40%;
+  }
+  50% {
+    left: 60%;
+  }
+  100% {
+    left: 40%;
+  }
+}
+@keyframes cloud2 {
+  0% {
+    left: 29%;
+  }
+  50% {
+    left: 45%;
+  }
+  100% {
+    left: 29%;
+  }
+}
+@-webkit-keyframes cloud2 {
+  0% {
+    left: 29%;
+  }
+  50% {
+    left: 45%;
+  }
+  100% {
+    left: 29%;
+  }
+}
+@-moz-keyframes cloud2 {
+  0% {
+    left: 29%;
+  }
+  50% {
+    left: 45%;
+  }
+  100% {
+    left: 29%;
+  }
+}
+@keyframes cloud3 {
+  0% {
+    left: 40%;
+  }
+  50% {
+    left: 20%;
+  }
+  100% {
+    left: 40%;
+  }
+}
+@-webkit-keyframes cloud3 {
+  0% {
+    left: 40%;
+  }
+  50% {
+    left: 20%;
+  }
+  100% {
+    left: 40%;
+  }
+}
+@-moz-keyframes cloud3 {
+  0% {
+    left: 40%;
+  }
+  50% {
+    left: 20%;
+  }
+  100% {
+    left: 40%;
+  }
+}
+.hidden {
+  overflow: hidden;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  position: relative;
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+/*顶部导航*/
+#top-nav2 {
+  display: none;
+  height: 70px;
+  border: none;
+  width: 100%;
+  background: transparent;
+}
+#top-nav2 .container {
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#top-nav2 .container .navbar-header {
+  margin-left: 3%;
+}
+#top-nav2 .container .navbar-brand {
+  margin-bottom: 16px;
+}
+#top-nav2 .container .navbar-brand img {
+  width: 80%;
+}
+#top-nav2 .container #hided {
+  float: right;
+  width: 520px;
+  height: 60px;
+  right: 6%;
+  position: absolute;
+  overflow: hidden;
+}
+#top-nav2 .container #hided .bullet {
+  width: 520px;
+  margin-top: 23px;
+  text-align: right;
+  position: absolute;
+}
+#top-nav2 .container #hided .bullet li {
+  cursor: pointer;
+  display: inline;
+  margin-left: 12.5px;
+  margin-right: 12.5px;
+  font-size: 1.1em;
+}
+#top-nav2 .container #hided .bullet li a {
+  color: black;
+  text-decoration: none;
+}
+#top-nav2 .container #hided .bullet li a:hover {
+  color: #f67e49;
+}
+#top-nav2 .container #hided .bullet .active {
+  color: #f67e49;
+}
+#top-nav2 .container #hide {
+  position: absolute;
+  margin-top: 22px;
+  right: 0;
+  margin-right: 5%;
+  cursor: pointer;
+  display: none;
+}
+/*子项目*/
+.main-project {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-project h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #f67e49;
+}
+.main-project hr {
+  width: 95%;
+}
+.main-project img {
+  width: 95%;
+  margin-bottom: 10px;
+}
+.main-project dl {
+  width: 95%;
+  margin: 0 auto;
+  text-align: justify;
+}
+.main-project dl dt {
+  font-size: 15px;
+  font-weight: normal;
+  color: #f67e49;
+  line-height: 20px;
+}
+.main-project dl dd {
+  font-size: 13px;
+  line-height: 25px;
+  text-align: justify;
+}
+.main-project p {
+  width: 95%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #f67e49;
+}
+/*团队子页面移动端*/
+.main-member {
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
+}
+.main-member .team-member {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.main-member .team-member img {
+  width: 90px;
+  display: inline-block;
+  float: left;
+  margin-right: 23px;
+}
+.main-member .team-member h3 {
+  margin: 10px;
+  font-size: 13px;
+  text-align: left;
+}
+.main-member .team-member h3 span {
+  font-size: 10px;
+  color: #929292;
+  margin-left: 13px;
+}
+.main-member .team-member p {
+  text-align: justify;
+  font-size: 10px;
+}
+.main-member .project-ex {
+  position: relative;
+  border: 1px solid #D8D8D8;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.main-member .project-ex h2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-size: 13px;
+  text-align: justify;
+  line-height: 18px;
+}
+.main-member .project-ex hr {
+  margin: 15px auto;
+  width: 90%;
+}
+.main-member .project-ex dl {
+  width: 90%;
+  margin: 0 auto;
+}
+.main-member .project-ex dl dt {
+  text-align: justify;
+  font-weight: normal;
+  font-size: 13px;
+  color: #f67e49;
+}
+.main-member .project-ex dl dd {
+  font-size: 13px;
+  text-align: justify;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  line-height: 22px;
+}
